@@ -1,0 +1,9 @@
+
+.active a{
+    text-decoration: none;
+    color: gray;
+}
+
+body { 
+    color: purple 
+}

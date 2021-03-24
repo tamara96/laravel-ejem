@@ -33,7 +33,7 @@ class SaveProjectRequest extends FormRequest
             'image' => [
                 $this->route('project') ? 'nullable' : 'required', 'mimes:jpeg,png'
             ],
-            'category_id' => ['required']
+            'category_id' => ['required', 'exists:categories,id']
 
         ];
     }
